@@ -1,0 +1,156 @@
+<div class="container">
+
+	<% if @email.errors.any? %>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h2 class="panel-title">
+							<%= pluralize(@email.errors.count, "error") %>
+							prevent your email to be sent to us! Please check it out and try again!
+						</h2>
+					</div>
+					<div class="panel-body">
+						<ul>	
+							<% @email.errors.full_messages.each do |msg| %>
+								<li><%= msg %></li>
+							<% end %>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	<% end %>
+
+
+
+	<div class="row">
+		<div class="col-xs-12">	
+			<div class="img_header_div">
+				<%= image_tag('logo.png', id:"logo")%>
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<p id="what_if">
+							What if you could share your real experiences with the UX community? What if you could contribute to the project, or just get updated first? <strong>You can!</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class='form_wraper'>
+				<div>
+					<h2 id="form_label">ENTER YOUR EMAIL TO SHARE EXPERIENCES OR TO GET UPDATED FIRST!</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+						<%= form_for(@email, :html => {role: "form"}) do |f| %>
+							<div class="input-group input_container">
+								<div class="control-label">
+									<% f.label :email %>
+								</div>
+								<%= f.email_field :email, class: "form-control", id: "email_form_input", placeholder: "Your email here", autofocus: true %>
+								<span class="input-group-btn"> 
+									<%= f.submit class: "btn btn-default", id: "submit_form_input", value: "ENJOY NOW!" %>
+								</span>
+							</div>
+						<% end %>
+					</div>									
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<div class="pitch">
+				<h2>What is this research about?</h2>		
+				<p>
+					Understand the root processes and tools that make the user-centered approach one of the most powerful methodologies to engage users and innovate is the main goal of this research. The <strong>100 Days Challenge About Users</strong>, as the name stands, will be held in 100 days and will work hard and intensely to deliver a scientific answer to this question. Follow us and be part of this project!
+				</p>
+			</div>
+		</div>
+	</div>	
+
+	<div class="img_background">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="benefits">	
+					<div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<%= image_tag('benefit1.jpg', class: 'benefit_img') %>
+							<h3>So, what is User Experience (UX)?</h3>
+							<p>
+							User Experience is a very trending concept nowadays when talking about tech companies and startups. Based on user-centered design and focusing on understanding how humans and computers interact, this approach concern on understanding the user needs in order to provide the best possible solution and reach the business goals.
+							</p>
+						</div>
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<%= image_tag('benefit2.jpg', class: 'benefit_img') %>
+							<h3>What is this 100 days challenge?</h3>
+							<p> 100 days challenge is a self-challenge that assume that in 100 days, with commitment and focus, you are able to reach most of your goals. On this case, we'll be diving into the UX subject through a scientific research that will answer what are the root processes and tools that, when adopted by professionals or startups can bring consistent results to the UX strategy. 
+							</p>
+						</div>			
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<%= image_tag('benefits.jpg', class: 'benefit_img') %>
+							<h3>Why should I care about it?</h3>
+							<p> The whole project encompasses the research and a practical experiment, which will be the stepby-step development of the <strong>aboutusers.com</strong> website. Every step will be deeply explained and the website will become a source of information for the UX community, with links, resources and real examples. And <strong>you can be part of it!</strong>
+							</p>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="social">
+			<h2>Don't loose our daily updates on social media!</h2>
+			<div class="col-lg-12 col-xs-12">
+				<%= link_to image_tag('MD_logo2.png', :class => 'social_icon'), "https://medium.com/@robertopescejr", :target => 'blank' %>
+				<!-- link_to image_tag('YB_logo2.png', :class => 'social_icon'), "https://www.youtube.com/channel/UC0Ow21BCgoVvPaN1RL57Ccg", :target => 'blank' %> -->
+			</div>
+		</div>
+	</div>
+	<hr>
+
+	<div id="fb_plugin">
+		<div class="fb-page" data-href="https://www.facebook.com/rethinkCAFE" data-tabs="timeline, messages" data-small-header="false" data-width="300px" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<div class='form_wraper'>
+				<div>
+					<h2 id="form_label2">ENTER YOUR EMAIL TO SHARE EXPERIENCES OR TO GET UPDATED FIRST!</h2>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+						<%= form_for(@email, :html => {role: "form"}) do |f| %>
+							<div class="input-group input_container">
+								<div class="control-label">
+									<% f.label :email %>
+								</div>
+								<%= f.email_field :email, class: "form-control", id: "email_form_input2", placeholder: "Your email here", autofocus: true %>
+								<span class="input-group-btn"> 
+									<%= f.submit class: "btn btn-default", id: "submit_form_input2", value: "ENJOY NOW!" %>
+								</span>
+							</div>
+						<% end %>
+					</div>									
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<small>
+			2016 | aboutusers.com | all rights reserved<br/>
+		</small>
+	</footer>
+</div>
+
