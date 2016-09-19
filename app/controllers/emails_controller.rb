@@ -11,7 +11,7 @@ class EmailsController < ApplicationController
 	def create
   		@email = Email.new(email_params)
 		if @email.save
-			flash[:success] = "Thank you!"
+			flash[:success] = "Thank you to enroll with About Users! We'll reach you out soon!"
 			redirect_to root_path
 		else
 			render 'new'
