@@ -2,13 +2,17 @@
 @import "bootstrap";
 
 body {
-	margin:0;
-	padding: 0;
-	font-family: Helvetica, Helvetica, sans-serif;
+margin:0;
+padding: 0;
+font-family: Helvetica, Helvetica, sans-serif;
+}
+
+.row {
+font-family: Helvetica, Verdana, sans-serif;
 }
 
 .img_header_div {
-	background-image: asset-url('header_img.jpg');
+background-image: asset-url('header_img.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,79 +22,53 @@ body {
 }
 
 #logo {
-	width: auto;
-	max-height: 100%;
-	padding: 10px 15px;
-	background: rgba(255, 255, 255, 0.9);
-	margin-top: 20px;
-	border-radius: 0;
+width: auto;
+max-height: 100%;
+padding: 10px 15px;
+margin-top: 20px;
+border-radius: 0;
 }
 
-#what_if {
-	color: #0b0b3f;
-	background-color: rgba(255, 255, 255, 0.9);
-	padding: 1.5em 1.5em 1.5em 1em;
-	margin-top: 18em;
-	margin-bottom: 8em;
-	line-height: 1.5em;
-	font-weight: 400;
+#caption {
+color: #ffffff;
+background-color: rgba(19, 19, 76, 0.9);
+padding: 2em 1.5em 0.5em 0.8em;
+margin-top: 21em;
+margin-bottom: 5em;
+line-height: 1.5em;
+font-weight: 500;
+text-transform: uppercase;
 }
 
-.form_wraper {
-	background-color: #0b0b3f;
-	padding: 30px 0px;
-	margin: 0 !important;
-	text-align: center;
-	color: white;
+#caption span {
+color: #ffff00;
+font-weight: 700;
+font-size: 1.2em;
 }
 
-#form_label {
-	font-weight: 300;
-	font-size: 1.2em;
-	letter-spacing: 2px;
-	padding-bottom: 30px;
-	margin: 0 !important;
-}
-
-.input_container {
-	padding: 3px;
-	background-color: #707070;
-}
-
-#email_form_input {
-	border-radius: 0;
-	border: none;
-	height: 50px;
-}
-
-#submit_form_input {
-	border-radius: 0;
-	border: none;
-	height: 50px;
+#description {
+background-color: #13134b;
+padding: 0.7em 0em;
+margin: 0 !important;
+text-align: center;
+color: white;
+font-size: 1.5em;
+text-transform: uppercase;
+font-weight: 400;
 }
 
 .pitch{
-	padding: 20px 20px 120px 20px;
-	text-align: center;
-	color: #141468;
-}
-
-.pitch h2 {
-	font-weight: bold;
-	font-size: 1.2em;
-	text-align: center;
-	padding-bottom: 10px;
-}
-
-.pitch p {
-	font-weight: 400;
-	font-size: 1em;
-	letter-spacing: 1px;
-	line-height: 2em;
+color: #13134b;
+padding: 1.2em 1em 8em 1em;
+text-align: center;
+font-weight: 500;
+font-size: 1.08em;
+letter-spacing: 0.07em;
+line-height: 1.7em;
 }
 
 .img_background {
-	background-image: asset-url('background_img.jpg');
+background-image: asset-url('background_img.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,44 +78,55 @@ body {
 }
 
 .benefits {
-	margin-top: -90px;
-	text-align: center;
-	color: white;
-	line-height: 2em;
+margin-top: -7em;
+text-align: center;
+color: white;
+line-height: 1.8em;
 }
 
 .benefit_img {
-	max-width: 100%;
-	border: 10px solid white;
+max-width: 100%;
+border: 10px solid white;
 }
 
 .benefits p {
-	padding: 15px 10px 10px 10px;
+padding: 15px 10px 10px 10px;
+}
+
+.benefits span {
+font-weight: 700;
+text-transform: uppercase;
+color: #ffff00;
+font-size: 0.9em;
 }
 
 .benefits h3 {
-	text-align: center;
-	font-size: 1em;
+text-align: center;
+font-size: 1em;
+font-weight: 600;
+color: #ffff00;
 }
 
 .social {
-	padding-top: 0 !important;
-	padding-bottom: 2em;
-	text-align: center;
+padding-top: 0 !important;
+padding-bottom: 2em;
+text-align: center;
 }
 
 .social h2 {
-	font-weight: bold;
-	font-size: 1.2em;
-	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
+color: #13134b;
+font-weight: bold;
+font-size: 1.2em;
+text-align: center;
+padding-top: 1em;
+padding-bottom: 1em;
+text-transform: uppercase;
 }
 
 .social_icon {
-	padding-left: 1em;
-	padding-right: 1em;
-	max-width: 100%;
+padding-left: 1em;
+padding-right: 1em;
+max-width: 100%;
 }
 
 hr {
@@ -150,34 +139,65 @@ hr {
 }
 
 #fb_plugin {
-	text-align: center;
-	padding-bottom: 50px;
+text-align: center;
+padding-bottom: 50px;
 }
 
 #email_form_input2 {
-	border-radius: 0;
-	border: none;
-	height: 50px;
+border-radius: 0;
+border: none;
+height: 50px;
 }
 
 #submit_form_input2 {
-	border-radius: 0;
-	border: none;
-	height: 50px;
+border-radius: 0;
+border: none;
+height: 50px;
 }
 
 #form_label2 {
-	font-weight: 300;
-	font-size: 1.2em;
-	letter-spacing: 2px;
-	padding-bottom: 30px;
+font-weight: 300;
+font-size: 1.2em;
+letter-spacing: 2px;
+padding-bottom: 30px;
+margin: 0 !important;
+}
+
+.form_wraper {
+	background-color: #13134b;
+	padding: 1em 0em;
 	margin: 0 !important;
+	text-align: center;
+	color: white;
+}
+
+.input_container {
+	padding: 3px;
+	background-color: #707070;
+}
+
+.self_wraper {
+	background-color: rgba(230, 230, 231, 0.3);
+}
+
+.rp_photo {
+	padding: 1em;
+}
+
+.self_descr {
+	padding: 1em;
+	color: #13134b;
+	text-align: justify;
+}
+
+.self_descr h4 {
+	text-align: left;
+	font-weight: 600;
 }
 
 footer {
-	color: white;
-	text-align: center;
-	background-color: #0b0b3f;
-	padding: 20px;
+color: white;
+text-align: center;
+background-color: #13134b;
+padding: 20px;
 }
-
