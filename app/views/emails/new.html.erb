@@ -27,9 +27,9 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="img_header_div">
-				<%= image_tag('logo.png', id:"logo")%>
+				<%= image_tag('logo_sm.png', id:"logo")%>
 				<div class="row">
-					<div class="col-md-5 col-xs-8">
+					<div class="col-xs-12 col-sm-5">
 						<p id="caption">
 							Having a hard time to get started in UX?<br />
 							<span>Join our 100 Days Challenge About Users!</span>
@@ -47,8 +47,8 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2">
-			<div class="pitch">	
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<div class="pitch">
 				<p>
 					<strong>A designer, a dream, and a struggle: the best environment for an idea!</strong><br /> The 100 Days Challenge About Users is a project developed by Roberto Pesce, after he realize how hard can be to get started in the UX field, with its many biases, processes and tools. To help other professionals in transition into this trending and amazing carreer, the project will dive during 100 days into the design, user experience design, user-centered design and human-computer interaction concepts, exploring processes, tools, trends and best practices in order to share discoveries and ideas.
 				</p>
@@ -61,25 +61,25 @@
 			<div class="col-xs-12">
 				<div class="benefits">	
 					<div class="row">
-						<div class="col-md-4 col-sm-12">
-							<%= image_tag('benefit1.jpg', class: 'benefit_img') %>
+						<div class="col-xs-12 col-md-4">
+							<%= image_tag('objective.jpg', class: 'benefit_img') %>
 							<h3>THE OBJECTIVE</h3>
 							<p> Share as much information as possible about UX, encouraging a collaborative and plural environment where we all can share discoveries, struggles, experiences and learn. <strong>Together.</strong>
 							</p>
 						</div>
-						<div class="col-md-4 col-sm-12">
-							<%= image_tag('benefit2.jpg', class: 'benefit_img') %>
+						<div class="col-xs-12 col-md-4">
+							<%= image_tag('challenge.jpg', class: 'benefit_img') %>
 							<h3>THE CHALLENGE</h3>
 							<p>
 								During 100 days:<br />
 									<span>
 									Post relevant content on Facebook<br />
-									Publish one new article on Medium<br />
-									Every day!</span>
+									Publish one new article on Medium<br /></span>
+								Every day!
 							</p>
 						</div>			
-						<div class="col-md-4 col-sm-12">
-							<%= image_tag('benefits.jpg', class: 'benefit_img') %>
+						<div class="col-xs-12 col-md-4">
+							<%= image_tag('content.jpg', class: 'benefit_img') %>
 							<h3>THE CONTENT</h3>
 							<p>As long as it is about UX, everybody is welcome to share relevant content, books, articles, sources, tools, documentaries, movies, upcoming events, influencers, and so on.
 							</p>
@@ -90,26 +90,32 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="social">
-			<h2>Follow us on social media and keep up-to-date with our daily posts!</h2>
+	<div class="social">
+		<div class="row">
 			<div class="col-xs-12">
-				<%= link_to image_tag('MD_logo2.png', :class => 'social_icon', :alt => 'Medium icon logo'), "https://medium.com/@robertopescejr", :target => 'blank' %>
-				<%= link_to "Click and check all our articles on Medium", "https://medium.com/@robertopescejr", :target => 'blank' %>
+				<h2>Follow us on social media and keep up-to-date with our daily posts!</h2>
+					<div class="row">
+						<div class="col-xs-12">
+							<%= link_to image_tag('medium_logo.png', :class => 'social_icon', :alt => 'Medium icon logo'), "https://medium.com/@robertopescejr", :target => 'blank' %>
+						</div>
+						<div class="col-xs-12">
+							<%= link_to "Click and check all our articles on Medium", "https://medium.com/@robertopescejr", :target => 'blank' %>
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>
 	<hr>
 
 	<div id="fb_plugin">
-		<div class="fb-page" data-href="https://www.facebook.com/aboutusersux" data-tabs="timeline, messages" data-small-header="false" data-width="600px" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+		<div class="fb-page" id="fb" data-href="https://www.facebook.com/aboutusersux" data-tabs="timeline, messages" data-small-header="false" data-width="500px" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
 	</div>
 
 	<div class="row">
 		<div class="col-xs-12">
 			<div class='form_wraper'>
 				<div>
-					<h2 id="form_label2">IF YOU WANT TO CONTRIBUTE TO THE PROJECT ENTER YOUR EMAIL AND WE'LL REACH YOU OUT!</h2>
+					<h2 id="form_label">IF YOU WANT TO CONTRIBUTE TO THE PROJECT ENTER YOUR EMAIL AND WE'LL REACH YOU OUT!</h2>
 				</div>
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
@@ -118,9 +124,9 @@
 								<div class="control-label">
 									<% f.label :email %>
 								</div>
-								<%= f.email_field :email, class: "form-control", id: "email_form_input2", placeholder: "Your email here", autofocus: true %>
+								<%= f.email_field :email, class: "form-control", id: "email_form_input", placeholder: "Your email here", autofocus: true %>
 								<span class="input-group-btn"> 
-									<%= f.submit class: "btn btn-default", id: "submit_form_input2", value: "I AM IN!" %>
+									<%= f.submit class: "btn btn-default", id: "submit_form_input", value: "I AM IN!" %>
 								</span>
 							</div>
 						<% end %>
@@ -132,10 +138,10 @@
 
 	<div class="self_wraper">
 		<div class="row">
-			<div class="col-lg-4 col-md-12">
-				<%= image_tag('rp_photo.jpg', :class => 'rp_photo', :alt => 'Roberto Pesce Photo') %>
+			<div class="col-xs-12 col-lg-4">
+				<%= image_tag('rp_photo_sm.jpg', :id => 'rp_photo', :alt => 'Roberto Pesce Photo') %>
 			</div>
-			<div class="col-lg-8 col-md-12">
+			<div class="col-xs-12 col-lg-8">
 				<div class="self_descr">
 				<h4>Project and author</h4>
 					<p>The idea for the About Users Project came from the struggle that Roberto Pesce, a Brazilian UX designer with background in business, project management and a big passion for innovation and digital, was having to get started on this huge field called user experience design.</p>
@@ -143,7 +149,8 @@
 					<p>Back in 2015, when he came to California focusing to work as a UX designer for a big tech company, he figured that he would need to master some of his skills to have, at least, a chance. As he started deepening his knowledge in UX, it didn’t take too long to notice how huge this field is and, sometimes, how hard even to know from ‘where’ to start can get. That was when he've got the insight: “<span>If even with my background and experience I’m having a hard time to get started in UX, other transitioning professionals should be experiencing the same. If I could share my studies and encourage them to share theirs, we all win.</span>”</p>
 
 					<p>This is how About Users came up. In order to create commitment, he adopted a 100 days challenge nature and focused on creating a collaborative environment for designers, entrepreneurs, project managers and team members, where they can learn together by sharing.</p>
-					[linkedin] [behance] 
+					<%= link_to "[LinkedIn]", "https://www.linkedin.com/in/roberto-pesce-jr-00746249", :target => 'blank' %>
+					<%= link_to "[Behance - portfolio]", "https://www.behance.net/robertopesce", :target => 'blank' %>
 				</div>
 			</div>
 		</div>

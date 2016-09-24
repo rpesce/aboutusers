@@ -12,69 +12,70 @@ font-family: Helvetica, Verdana, sans-serif;
 }
 
 .img_header_div {
-background-image: asset-url('header_img.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 0 !important;
-    margin: 0 !important;
+background-image: asset-url('header_img_xs.jpg');
+background-position: top;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+padding: 0 !important;
+margin: 0 !important;
 }
 
 #logo {
 width: auto;
 max-height: 100%;
-padding: 10px 15px;
-margin-top: 20px;
-border-radius: 0;
+padding: 1em;
 }
 
 #caption {
 color: #ffffff;
 background-color: rgba(19, 19, 76, 0.9);
 padding: 2em 1.5em 0.5em 0.8em;
-margin-top: 21em;
-margin-bottom: 5em;
+margin-top: 14em;
+margin-bottom: 3em;
 line-height: 1.5em;
-font-weight: 500;
+font-weight: 450;
 text-transform: uppercase;
+font-size: 0.8em;
 }
 
 #caption span {
 color: #ffff00;
-font-weight: 700;
-font-size: 1.2em;
+font-weight: 600;
+font-size: 1em;
+letter-spacing: 0.08em;
 }
 
 #description {
 background-color: #13134b;
-padding: 0.7em 0em;
+padding: 0.7em 0.7em;
 margin: 0 !important;
 text-align: center;
 color: white;
-font-size: 1.5em;
+font-size: 1.1em;
 text-transform: uppercase;
 font-weight: 400;
 }
 
 .pitch{
 color: #13134b;
+margin: 0 !important;
 padding: 1.2em 1em 8em 1em;
 text-align: center;
 font-weight: 500;
-font-size: 1.08em;
-letter-spacing: 0.07em;
-line-height: 1.7em;
+font-size: 1em;
+letter-spacing: 0.05em;
+line-height: 1.5em;
 }
 
 .img_background {
-background-image: asset-url('background_img.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 0 !important;
-    margin: 0 !important;
+background-image: asset-url('background.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+padding: 0 !important;
+margin: 0 !important;
 }
 
 .benefits {
@@ -90,14 +91,14 @@ border: 10px solid white;
 }
 
 .benefits p {
-padding: 15px 10px 10px 10px;
+padding: 0em 1em 1.5em 1em;
 }
 
 .benefits span {
-font-weight: 700;
+font-weight: 600;
 text-transform: uppercase;
 color: #ffff00;
-font-size: 0.9em;
+font-size: 0.8em;
 }
 
 .benefits h3 {
@@ -109,14 +110,14 @@ color: #ffff00;
 
 .social {
 padding-top: 0 !important;
-padding-bottom: 2em;
+padding-bottom: 0 !important;
 text-align: center;
 }
 
 .social h2 {
 color: #13134b;
 font-weight: bold;
-font-size: 1.2em;
+font-size: 1.1em;
 text-align: center;
 padding-top: 1em;
 padding-bottom: 1em;
@@ -124,75 +125,80 @@ text-transform: uppercase;
 }
 
 .social_icon {
-padding-left: 1em;
-padding-right: 1em;
 max-width: 100%;
 }
 
 hr {
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+margin-bottom: 1.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: 1px;
 }
 
 #fb_plugin {
-text-align: center;
-padding-bottom: 50px;
+padding-bottom: 2em;
+width: 250px;
+margin-left: auto;
+margin-right: auto;
+display: block;
 }
 
-#email_form_input2 {
+#email_form_input {
 border-radius: 0;
 border: none;
 height: 50px;
 }
 
-#submit_form_input2 {
+#submit_form_input {
 border-radius: 0;
 border: none;
 height: 50px;
 }
 
-#form_label2 {
-font-weight: 300;
-font-size: 1.2em;
-letter-spacing: 2px;
-padding-bottom: 30px;
+#form_label {
+font-weight: 400;
+font-size: 1em;
+letter-spacing: 0.15em;
+line-height: 1.2em;
+padding-bottom: 1em;
 margin: 0 !important;
 }
 
 .form_wraper {
-	background-color: #13134b;
-	padding: 1em 0em;
-	margin: 0 !important;
-	text-align: center;
-	color: white;
+background-color: #13134b;
+padding: 1em;
+margin: 0 !important;
+text-align: center;
+color: white;
 }
 
 .input_container {
-	padding: 3px;
-	background-color: #707070;
+padding: 3px;
+background-color: #707070;
 }
 
 .self_wraper {
-	background-color: rgba(230, 230, 231, 0.3);
+background-color: rgba(230, 230, 231, 0.3);
 }
 
-.rp_photo {
-	padding: 1em;
+#rp_photo {
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: auto;
+margin-right: auto;
+display: block;
 }
 
 .self_descr {
-	padding: 1em;
-	color: #13134b;
-	text-align: justify;
+padding: 0em 2em 2em 2em;
+color: #13134b;
+text-align: justify;
 }
 
 .self_descr h4 {
-	text-align: left;
-	font-weight: 600;
+text-align: center;
+font-weight: 600;
 }
 
 footer {
@@ -200,4 +206,113 @@ color: white;
 text-align: center;
 background-color: #13134b;
 padding: 20px;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .img_header_div {
+    background-image: asset-url('header_img_sm.jpg');
+    background-size: initial;
+    }
+
+    #fb_plugin {
+    width: 500px;
+    }
+
+    .benefits p {
+    padding: 0em 8em 1.5em 8em;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .img_header_div {
+    background-image: asset-url('header_img_md.jpg');
+    }
+
+    #caption {
+    margin-top: 22em;
+    margin-bottom: 6em;
+    font-size: 0.9em;
+    }
+
+    #caption span {
+    font-size: 1em;
+    }
+
+    #description {
+    padding: 1em;
+    font-size: 1.2em;
+    }
+
+    .form_wraper {
+    padding: 1em 1em;
+    }
+
+    #fb_plugin {
+    width: 500px;
+    }
+    
+    .benefits p {
+    padding: 0em 1em 1.5em 1em;
+    }
+
+
+/*MD
+- CHANGE LOGO SIZE - JAVASCRIPT
+*/
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .img_header_div {
+    background-image: asset-url('header_img_lg.jpg');
+    }
+
+    #caption {
+    margin-top: 25em;
+    margin-bottom: 6em;
+    font-size: 1em;
+    }
+
+    #caption span {
+    font-size: 1.1em;
+    }
+
+    #description {
+    padding: 1em;
+    font-size: 1.3em;
+    }
+
+    .pitch{
+    padding: 1.8em 1em 8em 1em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    }
+
+    .form_wraper {
+    padding: 2em 1em;
+    }
+
+    #rp_photo {
+    padding: 2em;
+    }
+
+    #fb_plugin {
+    width: 500px;
+    }
+
+    .benefits p {
+    padding: 0em 1em 1.5em 1em;
+    }
+
+/*LG
+- CHANGE LOGO SIZE
+*/
+    
 }
