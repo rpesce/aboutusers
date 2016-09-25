@@ -2,8 +2,8 @@
 @import "bootstrap";
 
 body {
-margin:0;
-padding: 0;
+margin:0 !important;
+padding: 0 !important;
 font-family: Helvetica, Helvetica, sans-serif;
 }
 
@@ -12,7 +12,6 @@ font-family: Helvetica, Verdana, sans-serif;
 }
 
 .img_header_div {
-background-image: asset-url('header_img_xs.jpg');
 background-position: top;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -209,7 +208,11 @@ padding: 20px;
 }
 
 
-
+@media only screen and (max-width: 767px) {
+    .img_header_div {
+    background-image: asset-url('header_img_xs.jpg');
+    }
+}
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -310,9 +313,7 @@ padding: 20px;
     .benefits p {
     padding: 0em 1em 1.5em 1em;
     }
-
+}
 /*LG
 - CHANGE LOGO SIZE
 */
-    
-}

@@ -6,15 +6,14 @@ $(document).ready ->
   $(window).one 'scroll', ->
     document.body.scrollTop = document.documentElement.scrollTop = 0
     return
-
+  
+  screenWidthInit = $(window).width()
 
   $(window).resize ->
-    screenWidth = $(window).width()
+    screenWidthNew = $(window).width()
     
-    if screenWidth < 768
-    	location.reload()
-    	return
-    	
+    if screenWidthNew < 768      
+
 
     else if screenWidth >= 768 and screenWidth < 992
 
