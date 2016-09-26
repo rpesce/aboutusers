@@ -5,13 +5,13 @@
 imgsUpdate = ->
   screenWidth = $(window).width()
   if screenWidth >= 992
-    setLogo = $('#logo').attr('src', '../assets/images/logo.png');
-    setPhoto = $('#rp_photo').attr('src', '../assets/images/rp_photo_lg.jpg');
+    setLogo = $('#logo').attr('src', '/assets/logo.png');
+    setPhoto = $('#rp_photo').attr('src', '/assets/rp_photo_lg.jpg');
     $('#logo').setLogo();
     $('#rp_photo').setPhoto();
   else
-    setLogo2 = $('#logo').attr('src', '../assets/images/logo_sm.png');
-    setPhoto2 = $('#rp_photo').attr('src', '../assets/images/rp_photo_sm.jpg');
+    setLogo2 = $('#logo').attr('src', '/assets/logo_sm.png');
+    setPhoto2 = $('#rp_photo').attr('src', '/assets/rp_photo_sm.jpg');
     $('#logo').setLogo2();
     $('#rp_photo').setPhoto2();
   return
