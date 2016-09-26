@@ -5,10 +5,10 @@
 imgsUpdate = ->
   screenWidth = $(window).width()
   if screenWidth >= 992
-    $('#logo').attr('src', '/assets/logo.png');
+    $('#logo').attr('src', '/assets/logo-b6fe1bca160b93acc12840a83adcc898c6a784ac9b28e43b0dd9b0d3939ba297.png');
     $('#rp_photo').attr('src', '/assets/rp_photo_lg.jpg');
   else
-    $('#logo').attr('src', '/assets/logo_sm.png');
+    $('#logo').attr('src', '/assets/logo_sm-9cf067ca5cc269e522d1e29b395dc1c7385b4a15e570040740e1a0c8cb853243.png');
     $('#rp_photo').attr('src', '/assets/rp_photo_sm.jpg');
   return
 
