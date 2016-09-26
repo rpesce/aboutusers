@@ -5,27 +5,27 @@
 imgsUpdate = ->
   screenWidth = $(window).width()
   if screenWidth >= 992
-    setLogo = $('#logo').attr('src', '../assets/logo.png')
-    setPhoto = $('#rp_photo').attr('src', '../assets/rp_photo_lg.jpg')
-    $('#logo').setLogo()
-    $('#rp_photo').setPhoto()
+    setLogo = $('#logo').attr('src', '../assets/logo.png');
+    setPhoto = $('#rp_photo').attr('src', '../assets/rp_photo_lg.jpg');
+    $('#logo').setLogo();
+    $('#rp_photo').setPhoto();
   else
-    setLogo = $('#logo').attr('src', '../assets/logo_sm.png')
-    setPhoto = $('#rp_photo').attr('src', '../assets/rp_photo_sm.jpg')
-    $('#logo').setLogo()
-    $('#rp_photo').setPhoto()
+    setLogo = $('#logo').attr('src', '../assets/logo_sm.png');
+    setPhoto = $('#rp_photo').attr('src', '../assets/rp_photo_sm.jpg');
+    $('#logo').setLogo();
+    $('#rp_photo').setPhoto();
   return
 
 $(document).ready ->
-	imgsUpdate()
+	imgsUpdate();
 	return
 
 $(window).on 'resize', ->
-	imgsUpdate()
+	imgsUpdate();
 	return
 
 $(window).one 'scroll', ->
-  	document.body.scrollTop = document.documentElement.scrollTop = 0
+  	document.body.scrollTop = document.documentElement.scrollTop = 0;
 	return
   
 
