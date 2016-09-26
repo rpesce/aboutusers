@@ -6,6 +6,7 @@
 				<div class="panel panel-danger">
 					<div class="panel-heading">
 						<h2 class="panel-title">
+							<a href="#" class="close" data-dismiss="panel">&#215;</a>
 							<%= pluralize(@email.errors.count, "error") %>
 							prevent your email to be sent to us! Please check it out and try again!
 						</h2>
@@ -27,7 +28,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 			<div class="img_header_div">
-				<%= image_tag('logo_sm.png', id:"logo")%>
+				<%= image_tag('logo_sm.png', id:"logo", alt: "logo_about_users")%>
 				<div class="row">
 					<div class="col-xs-12 col-sm-5">
 						<p id="caption">
@@ -139,7 +140,7 @@
 	<div class="self_wraper">
 		<div class="row">
 			<div class="col-xs-12 col-lg-4">
-				<%= image_tag('rp_photo_sm.jpg', :id => 'rp_photo', :alt => 'Roberto Pesce Photo') %>
+				<%= image_tag('rp_photo_sm.jpg', :id => 'rp_photo', :alt => 'author_photo') %>
 			</div>
 			<div class="col-xs-12 col-lg-8">
 				<div class="self_descr">
