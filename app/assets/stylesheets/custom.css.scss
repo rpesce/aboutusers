@@ -211,6 +211,7 @@ padding: 20px;
 @media only screen and (max-width: 767px) {
     .img_header_div {
     background-image: asset-url('header_img_xs.jpg');
+    background-size: initial;
     }
 }
 
