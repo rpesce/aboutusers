@@ -12,6 +12,7 @@ font-family: Helvetica, Verdana, sans-serif;
 }
 
 .img_header_div {
+background-image: asset-url('header_img_xs.jpg');
 background-position: top;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -41,30 +42,64 @@ font-size: 0.8em;
 #caption span {
 color: #ffff00;
 font-weight: 600;
-font-size: 1em;
+font-size: 0.9em;
 letter-spacing: 0.08em;
 }
 
-#description {
-background-color: #13134b;
-padding: 0.7em 0.7em;
+.box {
+background-color: #ffffff;
 margin: 0 !important;
+padding: 0 !important;
+float: none;
 text-align: center;
-color: white;
-font-size: 1.1em;
+}
+
+.box h2 {
+color: #ffff00;
+background-color: #13134b;
+padding: 1em;
+margin: 0 !important;
+font-weight: 500;
 text-transform: uppercase;
-font-weight: 400;
+font-size: 0.9em;
+text-align: center;
+}
+
+.icons_bkgd {
+    background-color: rgba(230, 230, 231, 0.3);
+    margin: 0.5em 0;
+    padding: 0.3em;
+    color: #13134b;
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.icons_bkgd h4 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.img_steps{
+    padding: 0.8em 0;
 }
 
 .pitch{
 color: #13134b;
 margin: 0 !important;
-padding: 1.2em 1em 8em 1em;
+padding: 1.2em 1em 9em 1em;
+text-align: justify;
+font-weight: 300;
+font-size: 0.8em;
+line-height: 1.2em;
+}
+
+.pitch h2 {
 text-align: center;
-font-weight: 500;
 font-size: 1em;
-letter-spacing: 0.05em;
-line-height: 1.5em;
+font-weight: 500;
+text-transform: uppercase;
+padding: 0.9em 0.7em;
+margin: 0 !important;
 }
 
 .img_background {
@@ -108,23 +143,29 @@ color: #ffff00;
 }
 
 .social {
+color: #13134b;
 padding-top: 0 !important;
 padding-bottom: 0 !important;
 text-align: center;
 }
 
 .social h2 {
-color: #13134b;
-font-weight: bold;
-font-size: 1.1em;
+font-weight: 600;
+font-size: 1em;
 text-align: center;
-padding-top: 1em;
-padding-bottom: 1em;
+padding: 0 !important;
 text-transform: uppercase;
+}
+
+.social h5 {
+font-size: 0.7em;
+padding-bottom: 1em;
+margin: 0;
 }
 
 .social_icon {
 max-width: 100%;
+padding: 0.5em;
 }
 
 hr {
@@ -156,11 +197,11 @@ height: 50px;
 }
 
 #form_label {
-font-weight: 400;
-font-size: 1em;
-letter-spacing: 0.15em;
-line-height: 1.2em;
-padding-bottom: 1em;
+color: #ffff00;
+font-weight: 300;
+font-size: 0.9em;
+line-height: 1.3em;
+padding: 0;
 margin: 0 !important;
 }
 
@@ -170,6 +211,10 @@ padding: 1em;
 margin: 0 !important;
 text-align: center;
 color: white;
+}
+
+.form_wraper p {
+    font-size: 0.8em;
 }
 
 .input_container {
@@ -207,24 +252,10 @@ background-color: #13134b;
 padding: 20px;
 }
 
-
-@media only screen and (max-width: 767px) {
-    .img_header_div {
-    background-image: asset-url('header_img_xs.jpg');
-    background-size: initial;
-    }
-}
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .img_header_div {
     background-image: asset-url('header_img_sm.jpg');
-    background-size: initial;
-    }
-
-    #fb_plugin {
-    width: 500px;
     }
 
     .benefits p {
@@ -232,10 +263,18 @@ padding: 20px;
     }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) {
 
     .img_header_div {
     background-image: asset-url('header_img_md.jpg');
+    }
+
+    #fb_plugin {
+    width: 500px;
+    }
+
+    .benefits p {
+    padding: 0em 1em 1.5em 1em;
     }
 
     #caption {
@@ -248,24 +287,70 @@ padding: 20px;
     font-size: 1em;
     }
 
-    #description {
-    padding: 1em;
+    .box h2 {
+    padding: 1.5em;
     font-size: 1.2em;
     }
 
-    .form_wraper {
-    padding: 1em 1em;
+    .icons_bkgd {
+    height: 17em;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    color: #13134b;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 0.5em;
     }
 
-    #fb_plugin {
-    width: 500px;
-    }
-    
-    .benefits p {
-    padding: 0em 1em 1.5em 1em;
+    .icons_bkgd h4 {
+    font-weight: 600;
+    font-size: 1.3em;
     }
 
-    
+    #idstep2 {
+        padding: 3.65em;
+    }
+
+    #idstep3 {
+        padding-bottom: 2em;
+    }    
+
+    #form_label {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: 0;
+    margin: 0 !important;
+    }
+
+    .form_wraper p {
+    font-size: 0.9em;
+    }
+
+    .pitch{
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.3em;
+    }
+
+    .pitch h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    }
+
+    .social h2 {
+    font-size: 1.1em;
+    }
+
+    .social h5 {
+    font-size: 0.9em;
+    }
+
+    .social_icon {
+    max-width: 100%;
+    padding: 0.5em;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -275,8 +360,6 @@ padding: 20px;
     }
 
     #caption {
-    margin-top: 22em;
-    margin-bottom: 6em;
     font-size: 1em;
     }
 
@@ -284,32 +367,14 @@ padding: 20px;
     font-size: 1.1em;
     }
 
-    #description {
-    padding: 1em;
-    font-size: 1.3em;
-    }
-
-    .pitch{
-    padding: 1.8em 1em 8em 1em;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    }
-
-    .form_wraper {
-    padding: 2em 1em;
+    .icons_bkgd {
+    height: 16em;
     }
 
     #rp_photo {
-    padding: 2em;
+    padding: 5em 3em;
     }
 
-    #fb_plugin {
-    width: 500px;
-    }
-
-    .benefits p {
-    padding: 0em 1em 1.5em 1em;
-    }
     .self_descr {
     padding: 2em 2em 2em 2em;
     color: #13134b;
