@@ -7,8 +7,11 @@ imgsUpdate = ->
   if screenWidth >= 992
     $('#logo').attr('src', '<%= asset_path("FLogo.png") %>');
     $('#rp_photo').attr('src', '<%= asset_path("Author.jpg") %>');
-  else
+  else if screenWidth > 768
     $('#logo').attr('src', '<%= asset_path("FLogo_sm.png") %>');
+    $('#rp_photo').attr('src', '<%= asset_path("Author_sm.jpg") %>');
+  else
+    $('#logo').attr('src', '<%= asset_path("FLogo_white.png") %>');
     $('#rp_photo').attr('src', '<%= asset_path("Author_sm.jpg") %>');
   return
 

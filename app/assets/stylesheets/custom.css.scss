@@ -12,31 +12,29 @@ font-family: Helvetica, Verdana, sans-serif;
 }
 
 .img_header_div {
-background-image: asset-url('header_img_xs.jpg');
-background-position: top;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: initial;
-padding: 0 !important;
-margin: 0 !important;
+background-color: #13134b;
 }
 
 #logo {
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding: 2em 1em 1em 1em;
 width: auto;
 max-height: 100%;
-padding: 1em;
 }
 
 #caption {
 color: #ffffff;
-background-color: rgba(19, 19, 76, 0.9);
-padding: 2em 1.5em 0.5em 0.8em;
-margin-top: 14em;
-margin-bottom: 3em;
+padding-left: 1em;
+padding-right: 1em;
+margin-top: 2em;
+margin-bottom: 1em;
 line-height: 1.5em;
 font-weight: 450;
 text-transform: uppercase;
 font-size: 0.8em;
+text-align: center;
 }
 
 #caption span {
@@ -256,7 +254,31 @@ padding: 20px;
 
     .img_header_div {
     background-image: asset-url('header_img_sm.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    padding: 0 !important;
+    margin: 0 !important;
+    }
+
+    #caption {
+    color: #ffffff;
+    background-color: rgba(19, 19, 76, 0.9);
+    padding: 2em 1.5em 0.5em 0.8em;
+    margin-top: 14em;
+    margin-bottom: 3em;
+    line-height: 1.5em;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    }
+
+    #logo {
+    display: inline;
+    width: auto;
+    max-height: 100%;
+    padding: 1em;
     }
 
     .benefits p {
@@ -268,7 +290,31 @@ padding: 20px;
 
     .img_header_div {
     background-image: asset-url('header_img_md.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    padding: 0 !important;
+    margin: 0 !important;
+    }
+
+    #caption {
+    color: #ffffff;
+    background-color: rgba(19, 19, 76, 0.9);
+    padding: 2em 1.5em 0.5em 0.8em;
+    margin-top: 14em;
+    margin-bottom: 3em;
+    line-height: 1.5em;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    }
+
+    #logo {
+    display: inline;
+    width: auto;
+    max-height: 100%;
+    padding: 1em;
     }
 
     #fb_plugin {
@@ -356,10 +402,34 @@ padding: 20px;
 }
 
 @media only screen and (min-width: 1200px) {
-    
+
     .img_header_div {
     background-image: asset-url('header_img_lg.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    padding: 0 !important;
+    margin: 0 !important;
+    }
+
+    #caption {
+    color: #ffffff;
+    background-color: rgba(19, 19, 76, 0.9);
+    padding: 2em 1.5em 0.5em 0.8em;
+    margin-top: 22em;
+    margin-bottom: 3em;
+    line-height: 1.5em;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    }
+
+    #logo {
+    display: inline;
+    width: auto;
+    max-height: 100%;
+    padding: 1em;
     }
 
     #caption {
